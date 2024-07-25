@@ -1,0 +1,111 @@
+/* cirecss/css/cirecss.css  -------------------------------------------
+
+name        : Cire
+description : simple and mobile first stylesheet
+version     : 1.0
+since       : July, 2024
+author      : Layesall
+----------------------------------------------------------------------*/
+
+/*--> import
+----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/*--> cirecss declare
+----------------------------------------------------------------------*/
+:root{
+
+    /* color */
+    --cDark: #333;
+    --cLight: #fefefe;
+    --cGray: #ddd;
+    --cGreen: #4FC38F;
+
+    /* size */
+    --cWidth: 100%;
+    --cMaxWidth: 768px;
+    --cHeight: auto;
+    --cMinHeight: 80vh;
+    --cPad: 10px;
+    --cMar: 10px;
+    --cFWeight: 700;
+    
+}
+
+/*--> init      : global init
+----------------------------------------------------------------------*/
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    color: var(--cLight);
+    background-color: var(--cDark);
+    border-top: var(--cGreen) 5px solid;
+}
+
+/*--> #cire     : root app wrapper
+----------------------------------------------------------------------*/
+#cire{
+    width: var(--cWidth);
+    max-width: var(--cMaxWidth);
+    margin: 0 auto;
+    padding: var(--cPad);
+}
+
+#cire>header,
+#cire>footer,
+#cire>main,
+#cire>main>section
+{
+    display: flex;
+    width: var(--cWidth);
+}
+
+#cire>main,
+#cire>main>section
+{
+    flex-flow: column;
+}
+
+#cire a{
+    color: inherit;
+    text-decoration: none;
+}
+
+#cire h1, 
+#cire h2, 
+#cire h3,
+#cire p{
+    display: block;
+    margin: var(--cMar) 0;
+}
+
+#cire h1{
+    font-size: 3.7vmin;
+    font-weight: 900;
+}
+
+#cire h2{
+    font-size: 3vmin;
+    font-weight: 700;
+}
+
+#cire h3{
+    font-size: 2.5vmin;
+    font-weight: 500;
+}
+
+#cire p{
+    font-size: 2vmin;
+    font-weight: normal;
+}
