@@ -1,0 +1,22 @@
+/* cirecss/css/components/_logo.css  ----------------------------------------
+
+name        : logo
+description : cirecss logo components
+version     : 1.0
+since       : July, 2024
+author      : Layesall
+----------------------------------------------------------------------*/
+#cire .--logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cGreen);
+    font-size: small!important;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-right: var(--cLight) 10px solid;
+    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
