@@ -1,0 +1,47 @@
+/* cirecss/css/components/_form.css  ----------------------------------------
+
+name        : form
+description : cirecss form components
+version     : 1.0
+since       : July, 2024
+author      : Layesall
+----------------------------------------------------------------------*/
+
+#cire form{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 380px;
+    text-align: end;
+}
+
+
+#cire form input,
+#cire form textarea{
+    font-size: 20px;
+    width: 100%;
+    height: 5rem;
+    padding: 5px;
+    margin: 5px 0;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+}
+
+#cire form input:focus,
+#cire form textarea:focus
+{
+    border: 2px solid var(--cGreen);
+    background-color: var(--cGray);
+}
+
+#cire form textarea{
+    height: 10rem;
+}
+
+#cire form input[type='submit']{
+    cursor: pointer;
+    width: 150px;
+    height: 4rem;
+    text-transform: uppercase;
+}

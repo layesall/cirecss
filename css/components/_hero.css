@@ -1,0 +1,40 @@
+/* cirecss/css/components/_hero.css  ----------------------------------------
+
+name        : hero
+description : cirecss hero components
+version     : 1.0
+since       : July, 2024
+author      : Layesall
+----------------------------------------------------------------------*/
+#cire>main>section.--hero{
+    position: relative;
+    margin: 7rem 0;
+}
+
+#cire>main>section.--hero a{
+    color: var(--cGreen);
+}
+
+#cire>main>section.--hero p{
+    font-size: 5vmin;
+    margin: 10px 0;
+}
+
+#cire>main>section.--hero .--logo{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cGreen);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-right: var(--cLight) 10px solid;
+    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
