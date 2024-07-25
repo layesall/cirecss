@@ -109,3 +109,60 @@ body{
     font-size: 2vmin;
     font-weight: normal;
 }
+
+/*--> header    : app header
+----> items     : logo - nav - nav-link
+----------------------------------------------------------------------*/
+#cire>header{
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: calc(var(--cMar));
+}
+
+#cire>header>a:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    font-weight: var(--cFWeight);
+}
+
+#cire>header>nav>a{
+    font-size: 2vmin;
+    text-transform: uppercase;
+}
+
+
+/*--> footer    : app footer
+----> items     : copyright - author
+----------------------------------------------------------------------*/
+#cire>footer{
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*--> main      : app main
+----> items     : section
+----------------------------------------------------------------------*/
+#cire>main{
+    min-height: var(--cMinHeight);
+}
+
+
+/*--> section   : app section
+----> items     : heading, paragraph 
+----------------------------------------------------------------------*/
+#cire>main>section{
+    margin: 3rem 0;
+}
+
+#cire>main>section:only-child{
+    margin: var(--cMar) 0;
+}
+
+#cire>main>section>span,
+#cire>main>section>small{
+    font-size: medium;
+}
