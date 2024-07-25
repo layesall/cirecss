@@ -9,7 +9,7 @@
 ## Usage 
 
     Import as CDN link
-    >> "https://cdn.jsdelivr.net/gh/layesall/cirecss/css/cire.css"
+    >> "https://cdn.jsdelivr.net/gh/layesall/cirecss/css/cirecss.css"
 
     Use html semantic inside the parent wrapper : <div id='cire'></div>
     <div id='cire'>
